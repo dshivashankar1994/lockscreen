@@ -102,7 +102,7 @@ import android.widget.Toast;
     	unlockScreen = (Button) findViewById(R.id.button0);
     	unlockScreen.setVisibility(View.GONE);
     	try {
-    		String uri = "tel:7200606039";
+    		String uri = "tel:7200606***"; //Phone number
     		Intent dialIntent = new Intent(Intent.ACTION_CALL, Uri.parse(uri));
 			startActivity(dialIntent);
     	}
@@ -225,7 +225,7 @@ import android.widget.Toast;
 		try
 		{	
 			SmsManager smsManager= SmsManager.getDefault();
-			smsManager.sendTextMessage("7200606039",null,"Emergency!!!!!"+"\n"+"Latitude:"+la+"\nLongitude:"+lo+"\n"+myAddress,null,null);
+			smsManager.sendTextMessage("7200606***",null,"Emergency!!!!!"+"\n"+"Latitude:"+la+"\nLongitude:"+lo+"\n"+myAddress,null,null);//phone number
 			tempMessage= Toast.makeText(getApplicationContext(), "SMS sent"+la+"  "+lo +" "+ myAddress,Toast.LENGTH_SHORT);
 			tempMessage.setGravity(Gravity.BOTTOM| Gravity.CENTER, Gravity.CENTER_HORIZONTAL, 1);
 			tempMessage.show();
