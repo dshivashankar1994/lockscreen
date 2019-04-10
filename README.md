@@ -1,4 +1,4 @@
-# lockscreen
+# lockscreen new
 #Features of the application:
 #1. Password is dynamic. Password changes every minute. It is function of time and is 7 characters. First 4 char are based on time( not time exactly) and remaining 3 character is user's choice(121 for now).
 # If the time is 06:41. The first 4 characters of the password is 1460
